@@ -1,0 +1,39 @@
+﻿<Page x:Class="Tagir.PageChangeRas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tagir"
+      mc:Ignorable="d" 
+      d:DesignHeight="520" d:DesignWidth="1000"
+      Title="PageChangeRas">
+
+    <Grid Margin="50 0 0 0 ">
+        <StackPanel Width="400"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="День недели:" Style="{StaticResource Tbl2}"/>
+            <ComboBox IsReadOnly="True" DisplayMemberPath="Name" HorizontalAlignment="Left" Name="CmbD"  Margin="10 0"
+                    Width="200" />
+            <TextBlock Text="Время начала:"  Style="{StaticResource Tbl2}"/>
+            <ComboBox DisplayMemberPath="StartTime" HorizontalAlignment="Left" Name="CmbS"  Margin="10 0"
+                    Width="200" />
+            <TextBlock Text="Конец занятия:"  Style="{StaticResource Tbl2}"/>
+            <ComboBox DisplayMemberPath="EndTime" HorizontalAlignment="Left" Name="CmbE"  Margin="10 0"
+                    Width="200" />
+            <TextBlock Text="Группа"  Style="{StaticResource Tbl2}"/>
+            <ComboBox DisplayMemberPath="Name" HorizontalAlignment="Left" Name="CmbG"  Margin="10 0"
+                    Width="200" />
+            <TextBlock Text="Тренер:"  Style="{StaticResource Tbl2}"/>
+            <ComboBox DisplayMemberPath="FullName" HorizontalAlignment="Left" Name="CmbT"  Margin="10 0"
+                    Width="200" />
+
+            <TextBlock Text="Место:"  Style="{StaticResource Tbl2}"/>
+            <ComboBox Width="200" DisplayMemberPath="Name" HorizontalAlignment="Left" Name="CmbM"  Margin="10 0"
+                     />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="10" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+
+            <Button  Content="Сохранить" Style="{StaticResource Btn3}" Click="Button_Click"  />
+        </StackPanel>
+
+    </Grid>
+</Page>
